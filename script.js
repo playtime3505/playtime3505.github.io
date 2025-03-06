@@ -76,26 +76,26 @@ function showRetryMessage() {
 }
 
 function resetCart() {
-    // Reset all item quantities to 0
+
     items.forEach(item => item.quantity = 0);
 
-    // Update the cart to reflect the changes
+    
     updateCart();
 
-    // Reset total and hide messages
+    
     totalPriceElement.textContent = "0.00 CO₂";
     message.style.display = "none";
     retryMessage.style.display = "none";
     retryBtn.style.display = "none";
 
-    // Change the text of the reset button dynamically
+    
     resetBtn.textContent = "Reset Successful";
     
-    // Change it back to "Reset Cart" after 2 seconds
+
     setTimeout(() => {
         resetBtn.textContent = "Reset";
     }, 2000);
 }
 
-// Initialize the cart
+
 updateCart();
