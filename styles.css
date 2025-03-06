@@ -1,0 +1,137 @@
+body {
+    font-family: 'Lucida Grande', 'Arial', sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom, #e0e0e0, #c0c0c0);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 420px;
+    margin: 50px auto;
+    background: linear-gradient(to bottom, #ffffff, #d0d0d0); 
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+    border: 1px solid #aaa;
+}
+
+h2 {
+    color: #0055aa;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #b0b0b0;
+}
+
+.item span {
+    font-size: 16px;
+    flex: 1;
+    text-align: left;
+    color: #003366;
+}
+
+button {
+    padding: 10px 14px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+    background: linear-gradient(to bottom, #4a90e2, #0055aa);
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.6), 
+                0px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #62a8e4, #004488);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+.quantity {
+    margin: 0 12px;
+    font-size: 18px;
+    color: #002244;
+}
+
+.calculate-btn {
+    width: 100%;
+    padding: 12px;
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+    background: linear-gradient(to bottom, #76c7ff, #0072e5);
+}
+
+.total {
+    font-size: 20px;
+    font-weight: bold;
+    color: #002244;
+    margin-top: 15px;
+}
+
+/* Fix for message text after "Calculate Total" */
+.message {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 8px;
+    display: block;
+    text-align: center;
+    box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.5),
+                0px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.message.error {
+    background: linear-gradient(to bottom, #ff8a80, #c62828);
+    color: white;
+}
+
+.message.success {
+    background: linear-gradient(to bottom, #81c784, #2e7d32);
+    color: white;
+}
+
+/* Fix for "Show Daily Emissions of Top 100 Companies" message */
+.retry-btn {
+    display: none;
+    background: linear-gradient(to bottom, #ffb74d, #e65100);
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.retry-message {
+    font-size: 14px;
+    color: #ff6f00;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+
+/* Fix for "Read More" and "Back to Home" buttons */
+.custom-link-btn, .back-btn {
+    display: inline-block;
+    background: linear-gradient(to bottom, #66bb6a, #388e3c);
+    color: white;
+    padding: 10px 14px;
+    font-size: 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.custom-link-btn:hover, .back-btn:hover {
+    background: linear-gradient(to bottom, #81c784, #2e7d32);
+}

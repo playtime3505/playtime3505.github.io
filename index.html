@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon footprint calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Carbon footprint calculator</h2>
+        <div id="cart">
+        </div>
+        <button class="calculate-btn" onclick="calculateTotal()">Calculate Total</button>
+        <div class="total">
+            <h3>Total: <span id="total-price">0.00</span></h3>
+            <p id="message" class="message"></p>
+        </div>
+        <button id="retry-btn" class="retry-btn" onclick="showRetryMessage()">Show daily emissions of top 100 companies</button>
+        <p id="retry-message" class="retry-message"></p>
+
+        <button id="reset-btn" class="reset-btn" onclick="resetCart()">Reset</button>
+
+<a href="info.html" class="custom-link-btn">Read More</a>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
